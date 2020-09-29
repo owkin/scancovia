@@ -58,7 +58,12 @@ equal to 0.187, and 0.375.
 
 ## Installation
 
-You can install this repository by running ```pip install git+https://github.com/owkin/scancovia.git```. 
+You can install this repository by running:
+ ```
+git clone https://github.com/owkin/scancovia.git
+cd scancovia 
+pip install -e .
+``` 
 This will install all the required dependencies defined in `setup.py`. Note that
 tensorflow 1.14 is additionally required to run the Liang et al. benchmark
 
