@@ -1,9 +1,10 @@
 # ScanCovIA 
 
 This repository open sources all the AI-severity model presented in 
-*Integration of clinical characteristics, lab tests and a deep learning 
-CT scan analysis to improve prognosis of  COVID-19 severity for hospitalized patients* 
-([link to the paper](https://www.medrxiv.org/content/10.1101/2020.05.14.20101972v1)), and reproduces alternative models presented in the literature.
+*Integration of clinical characteristics, lab tests and a deep learning CT scan
+ analysis to predict severity of hospitalized COVID-19 patients* 
+([link to the paper](https://www.medrxiv.org/content/10.1101/2020.05.14.20101972v1)), 
+and reproduces alternative models presented in the literature.
 
 ## Available COVID-19 risk scores
 
@@ -43,7 +44,7 @@ Associated class: `Benchmarker` in `benchmarker.py`
 
 ### Performances of the models
 
-AI-severity has been evaluated on 3 different outcomes and 2 validation cohorts:
+AI-severity has been evaluated on 3 different outcomes and 2 cohorts:
 - A cohort of 150 patients from Hôpital Bicêtre APHP (first row)
 - An independent cohort of 135 patients from Gustave Roussy (second row)
 
@@ -51,12 +52,14 @@ AI-severity has been evaluated on 3 different outcomes and 2 validation cohorts:
 
 ### Calibration
  
-TODO
+For the AI-severity model, the two terciles used to determine threshold values for low, medium and high risk groups were 
+equal to 0.187, and 0.375.
+![km](./assets/km_curves.png?raw=True)
 
 ## Installation
 
 You can install this repository by running ```pip install git+https://github.com/owkin/scancovia.git```. 
-This will install all the required dependencies defined in `setup.py`.
+This will install all the required dependencies defined in `setup.py`. Note that
 tensorflow 1.14 is additionally required to run the Liang et al. benchmark
 
 ## Data format
@@ -203,7 +206,7 @@ This work is a joint work from Gustave Roussy, Hôpital Bicêtre AP-HP, Centre d
 ```
 @article {Lassau2020.05.14.20101972,
 	author = {Lassau et al.},
-	title = {AI-based multi-modal integration of clinical characteristics, lab tests and chest CTs improves COVID-19 outcome prediction of hospitalized patients},
+	title = {Integration of clinical characteristics, lab tests and a deep learning CT scan analysis to predict severity of hospitalized COVID-19 patients},
 	year = {2020},
 	doi = {10.1101/2020.05.14.20101972},
 	eprint = {https://www.medrxiv.org/content/early/2020/07/02/2020.05.14.20101972.full.pdf},

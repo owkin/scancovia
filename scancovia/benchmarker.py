@@ -464,7 +464,7 @@ class Benchmarker:
     Parameters
     ----------
     model_list: tuple of str
-        list of model_list to use. By default, all model_list are used. Available model_list are in self.available_models
+        list of model_list to use. By default, all models are used. Available models are in self.available_models
     """
 
     available_models = {

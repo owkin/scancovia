@@ -103,13 +103,11 @@ class MoCoExtractor():
         model = torch.nn.Sequential(*list(resnet.children())[:-2])
 
         # Load model
-        # TODO: move to torch hub. Currently in Github release
-        path = '/project/data/local/moco_models/last_checkpoint.pth.tar'
-        ckpt = torch.load(path, map_location=device)
+        url = 'https://github.com/owkin/scancovia/releases/download/v1.0/resnet50_moco_ct.pth.tar'
+        ckpt = torch.hub.load_state_dict_from_url(url, progress=True, map_location=device)
         new_ckpt = OrderedDict((k[len('module.feature_extractor.'):], v)
                                for k, v in ckpt['state_dict'].items() if 'feature_extractor' in k)
         model.load_state_dict(new_ckpt)
-        ###########################################################
 
         model.eval()
         model.to(device)
