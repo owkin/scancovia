@@ -9,7 +9,7 @@ setup(name='scancovia',
       install_requires=[
           'numpy>=1.18.4',
           'pandas>=0.24.2',
-          'SimpleITK>=1.2.4',
+          'SimpleITK==1.2.4',
           'scikit-image>=0.15.0',
           'lungmask @ git+https://git@github.com/JoHof/lungmask@master',
           'efficientnet_pytorch @ git+https://git@github.com/lukemelas/EfficientNet-PyTorch@master',
