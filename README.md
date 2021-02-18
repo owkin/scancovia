@@ -1,9 +1,8 @@
 # ScanCovIA 
 
 This repository open sources all the AI-severity model presented in 
-*Integration of clinical characteristics, lab tests and a deep learning CT scan
- analysis to predict severity of hospitalized COVID-19 patients* 
-([link to the paper](https://www.medrxiv.org/content/10.1101/2020.05.14.20101972v1)), 
+*Integrating deep learning CT-scan model, biological and clinical variables to predict severity of COVID-19 patients* 
+(2021, Nature Communications, [link](https://www.nature.com/articles/s41467-020-20657-4)), 
 and reproduces alternative models presented in the literature.
 
 ## Available COVID-19 risk scores
@@ -209,13 +208,13 @@ Then you can similarly run the model.s on a dictionnary or a dataframe
 This work is a joint work from Gustave Roussy, Hôpital Bicêtre AP-HP, Centre de Vision Numérique - Université Paris-Saclay - CentraleSupélec - Inria, and Owkin Inc. When using this repository, please consider citing the associated article:
 
 ```
-@article {Lassau2020.05.14.20101972,
-	author = {Lassau et al.},
-	title = {Integration of clinical characteristics, lab tests and a deep learning CT scan analysis to predict severity of hospitalized COVID-19 patients},
-	year = {2020},
-	doi = {10.1101/2020.05.14.20101972},
-	eprint = {https://www.medrxiv.org/content/early/2020/07/02/2020.05.14.20101972.full.pdf},
-	journal = {medRxiv}
+@article{Lassau2021,
+  doi = {10.1038/s41467-020-20657-4},
+  url = {https://doi.org/10.1038/s41467-020-20657-4},
+  year = {2021},
+  author = {Lassau et al.},
+  title = {Integrating deep learning {CT}-scan model,  biological and clinical variables to predict severity of {COVID}-19 patients},
+  journal = {Nature Communications}
 }
 ```
 ## License
