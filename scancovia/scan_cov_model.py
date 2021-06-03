@@ -109,7 +109,7 @@ class ScanCovModel():
 
     Multimodal scores:
         - 'Clinical and bio' : clinical and biology data only
-        - 'Trimodal Radiologist report' : CT scans annotations of radiologists, clinical and biology data
+        - 'Clinical and bio and radiologist report' : CT scans annotations of radiologists, clinical and biology data
         - 'AI-segment' : automatic CT scans annotations, clinical and bio data
         - 'AI-severity' : automatic CT scans risk score, clinical and bio data
 
